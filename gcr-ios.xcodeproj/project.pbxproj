@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3522A2F61F3476BC00C61416 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522A2F51F3476BC00C61416 /* APIClient.swift */; };
+		3522A2F81F34770E00C61416 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522A2F71F34770E00C61416 /* URL.swift */; };
+		357721D71F4ECD10003EB9CB /* CarDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357721D61F4ECD10003EB9CB /* CarDetails.swift */; };
+		357721DA1F4EFA5C003EB9CB /* CarDealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357721D91F4EFA5B003EB9CB /* CarDealer.swift */; };
+		35ADD6B71F559C2000860669 /* BasicReviewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ADD6B61F559C2000860669 /* BasicReviewDetail.swift */; };
+		3F4755325E1B1895545EE13B /* Pods_gcr_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7B80FD32B49280992F347 /* Pods_gcr_ios.framework */; };
+		6A07D3DC1F1E03EB003B8417 /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A07D3DB1F1E03EB003B8417 /* CarDetailsViewController.swift */; };
+		6A07D3DE1F1E519D003B8417 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A07D3DD1F1E519D003B8417 /* Constants.swift */; };
+		6A09C7771F14BABB0096D236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09C7761F14BABB0096D236 /* AppDelegate.swift */; };
+		6A09C7791F14BABB0096D236 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09C7781F14BABB0096D236 /* MainViewController.swift */; };
+		6A09C77C1F14BABB0096D236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A09C77A1F14BABB0096D236 /* Main.storyboard */; };
+		6A09C77E1F14BABB0096D236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A09C77D1F14BABB0096D236 /* Assets.xcassets */; };
+		6A09C7811F14BABB0096D236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A09C77F1F14BABB0096D236 /* LaunchScreen.storyboard */; };
+		6A4507A61F28850200279B64 /* gulfcars-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A4507A51F28850200279B64 /* gulfcars-logo.png */; };
+		6A89F7321F22118A007D7CDA /* ReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A89F7311F22118A007D7CDA /* ReviewsTableViewCell.swift */; };
+		6A89F7381F222765007D7CDA /* DealerCarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A89F7371F222765007D7CDA /* DealerCarListViewController.swift */; };
+		6A89F73C1F22282B007D7CDA /* DealerCarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A89F73B1F22282B007D7CDA /* DealerCarListTableViewCell.swift */; };
+		6A8E93091F20D6E600A2E140 /* ReviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E93081F20D6E600A2E140 /* ReviewCard.swift */; };
+		6AB376731F1CD73300C41EC3 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB376721F1CD73300C41EC3 /* SearchController.swift */; };
+		6AB376791F1CFA2400C41EC3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB376781F1CFA2400C41EC3 /* SearchTableViewCell.swift */; };
+		6AE579421F18AEA6006384AC /* CarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE579411F18AEA6006384AC /* CarCard.swift */; };
+		6AE579441F18AFA8006384AC /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE579431F18AFA8006384AC /* AppColors.swift */; };
+		6AE5794C1F18B43C006384AC /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE5794B1F18B43C006384AC /* MainTableViewCell.swift */; };
+		6AEDCAF81F20AE0400671A0C /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDCAF71F20AE0400671A0C /* ReviewsViewController.swift */; };
+		6AEDCAFA1F20AE1E00671A0C /* DealerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDCAF91F20AE1E00671A0C /* DealerViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05D7B80FD32B49280992F347 /* Pods_gcr_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gcr_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3522A2F51F3476BC00C61416 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Models/APIClient.swift; sourceTree = "<group>"; };
+		3522A2F71F34770E00C61416 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URL.swift; path = Models/URL.swift; sourceTree = "<group>"; };
+		357721D61F4ECD10003EB9CB /* CarDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarDetails.swift; path = Models/CarDetails.swift; sourceTree = "<group>"; };
+		357721D91F4EFA5B003EB9CB /* CarDealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarDealer.swift; path = Models/CarDealer.swift; sourceTree = "<group>"; };
+		35ADD6B61F559C2000860669 /* BasicReviewDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicReviewDetail.swift; path = Models/BasicReviewDetail.swift; sourceTree = "<group>"; };
+		5F6AE86EA8D52DADE3895265 /* Pods-gcr-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gcr-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gcr-ios/Pods-gcr-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		6A07D3DB1F1E03EB003B8417 /* CarDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
+		6A07D3DD1F1E519D003B8417 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Models/Constants.swift; sourceTree = "<group>"; };
+		6A09C7731F14BABB0096D236 /* gcr-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gcr-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A09C7761F14BABB0096D236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A09C7781F14BABB0096D236 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6A09C77B1F14BABB0096D236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A09C77D1F14BABB0096D236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A09C7801F14BABB0096D236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A09C7821F14BABB0096D236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A4507A51F28850200279B64 /* gulfcars-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gulfcars-logo.png"; sourceTree = "<group>"; };
+		6A89F7311F22118A007D7CDA /* ReviewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewCell.swift; sourceTree = "<group>"; };
+		6A89F7371F222765007D7CDA /* DealerCarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealerCarListViewController.swift; sourceTree = "<group>"; };
+		6A89F73B1F22282B007D7CDA /* DealerCarListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealerCarListTableViewCell.swift; sourceTree = "<group>"; };
+		6A8E93081F20D6E600A2E140 /* ReviewCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewCard.swift; path = Models/ReviewCard.swift; sourceTree = "<group>"; };
+		6AB376721F1CD73300C41EC3 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		6AB376781F1CFA2400C41EC3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		6AE579411F18AEA6006384AC /* CarCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarCard.swift; path = Models/CarCard.swift; sourceTree = "<group>"; };
+		6AE579431F18AFA8006384AC /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppColors.swift; path = Models/AppColors.swift; sourceTree = "<group>"; };
+		6AE5794B1F18B43C006384AC /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		6AEDCAF71F20AE0400671A0C /* ReviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
+		6AEDCAF91F20AE1E00671A0C /* DealerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealerViewController.swift; sourceTree = "<group>"; };
+		A51E72F7EC044B9C8D1DDE04 /* Pods-gcr-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gcr-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-gcr-ios/Pods-gcr-ios.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A09C7701F14BABB0096D236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4755325E1B1895545EE13B /* Pods_gcr_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20F0222A354DCEDD13E820CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F6AE86EA8D52DADE3895265 /* Pods-gcr-ios.debug.xcconfig */,
+				A51E72F7EC044B9C8D1DDE04 /* Pods-gcr-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		357721D81F4ECD2F003EB9CB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3522A2F51F3476BC00C61416 /* APIClient.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		3586A6511F4C45CE004D449A /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				6AE579411F18AEA6006384AC /* CarCard.swift */,
+				6A8E93081F20D6E600A2E140 /* ReviewCard.swift */,
+			);
+			name = Cards;
+			sourceTree = "<group>";
+		};
+		3586A6521F4C4600004D449A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6AE579431F18AFA8006384AC /* AppColors.swift */,
+				6A07D3DD1F1E519D003B8417 /* Constants.swift */,
+				3522A2F71F34770E00C61416 /* URL.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		6A07D3DA1F1E03B5003B8417 /* CarDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				6A07D3DB1F1E03EB003B8417 /* CarDetailsViewController.swift */,
+			);
+			name = CarDetailsView;
+			sourceTree = "<group>";
+		};
+		6A09C76A1F14BABB0096D236 = {
+			isa = PBXGroup;
+			children = (
+				6A09C7751F14BABB0096D236 /* gcr-ios */,
+				6A09C7741F14BABB0096D236 /* Products */,
+				20F0222A354DCEDD13E820CC /* Pods */,
+				C5AE0A70D5C4948C87228BCC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6A09C7741F14BABB0096D236 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A09C7731F14BABB0096D236 /* gcr-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A09C7751F14BABB0096D236 /* gcr-ios */ = {
+			isa = PBXGroup;
+			children = (
+				6A11E30E1F14CDC900BF5440 /* Images */,
+				6A67965A1F14C64200E3C49E /* Models */,
+				6A67965B1F14C65100E3C49E /* View */,
+				6A67965C1F14C65500E3C49E /* Controllers */,
+				6A67965D1F14C65B00E3C49E /* Others */,
+			);
+			path = "gcr-ios";
+			sourceTree = "<group>";
+		};
+		6A11E30E1F14CDC900BF5440 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6A4507A51F28850200279B64 /* gulfcars-logo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		6A67965A1F14C64200E3C49E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3586A6511F4C45CE004D449A /* Cards */,
+				3586A6521F4C4600004D449A /* Constants */,
+				357721D81F4ECD2F003EB9CB /* Network */,
+				357721D61F4ECD10003EB9CB /* CarDetails.swift */,
+				357721D91F4EFA5B003EB9CB /* CarDealer.swift */,
+				35ADD6B61F559C2000860669 /* BasicReviewDetail.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6A67965B1F14C65100E3C49E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A09C77A1F14BABB0096D236 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6A67965C1F14C65500E3C49E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6AB376761F1CF9E400C41EC3 /* MainView */,
+				6AB376771F1CFA0600C41EC3 /* SearchView */,
+				6A07D3DA1F1E03B5003B8417 /* CarDetailsView */,
+				6AEDCAF51F20ADC100671A0C /* ReviewsView */,
+				6AEDCAF61F20ADDD00671A0C /* DealerView */,
+				6A89F7331F2226F2007D7CDA /* DealerCarListView */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6A67965D1F14C65B00E3C49E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				6A09C7761F14BABB0096D236 /* AppDelegate.swift */,
+				6A09C77D1F14BABB0096D236 /* Assets.xcassets */,
+				6A09C77F1F14BABB0096D236 /* LaunchScreen.storyboard */,
+				6A09C7821F14BABB0096D236 /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		6A89F7331F2226F2007D7CDA /* DealerCarListView */ = {
+			isa = PBXGroup;
+			children = (
+				6A89F7371F222765007D7CDA /* DealerCarListViewController.swift */,
+				6A89F73B1F22282B007D7CDA /* DealerCarListTableViewCell.swift */,
+			);
+			name = DealerCarListView;
+			sourceTree = "<group>";
+		};
+		6AB376761F1CF9E400C41EC3 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				6A09C7781F14BABB0096D236 /* MainViewController.swift */,
+				6AE5794B1F18B43C006384AC /* MainTableViewCell.swift */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		6AB376771F1CFA0600C41EC3 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				6AB376721F1CD73300C41EC3 /* SearchController.swift */,
+				6AB376781F1CFA2400C41EC3 /* SearchTableViewCell.swift */,
+			);
+			name = SearchView;
+			sourceTree = "<group>";
+		};
+		6AEDCAF51F20ADC100671A0C /* ReviewsView */ = {
+			isa = PBXGroup;
+			children = (
+				6AEDCAF71F20AE0400671A0C /* ReviewsViewController.swift */,
+				6A89F7311F22118A007D7CDA /* ReviewsTableViewCell.swift */,
+			);
+			name = ReviewsView;
+			sourceTree = "<group>";
+		};
+		6AEDCAF61F20ADDD00671A0C /* DealerView */ = {
+			isa = PBXGroup;
+			children = (
+				6AEDCAF91F20AE1E00671A0C /* DealerViewController.swift */,
+			);
+			name = DealerView;
+			sourceTree = "<group>";
+		};
+		C5AE0A70D5C4948C87228BCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05D7B80FD32B49280992F347 /* Pods_gcr_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A09C7721F14BABB0096D236 /* gcr-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A09C7851F14BABB0096D236 /* Build configuration list for PBXNativeTarget "gcr-ios" */;
+			buildPhases = (
+				7D21F497E0D9128BD5EA71CA /* [CP] Check Pods Manifest.lock */,
+				6A09C76F1F14BABB0096D236 /* Sources */,
+				6A09C7701F14BABB0096D236 /* Frameworks */,
+				6A09C7711F14BABB0096D236 /* Resources */,
+				B65D058B9582DAA156649D3A /* [CP] Embed Pods Frameworks */,
+				265F7AD9162DFCF2C24AE91C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gcr-ios";
+			productName = "gcr-ios";
+			productReference = 6A09C7731F14BABB0096D236 /* gcr-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A09C76B1F14BABB0096D236 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = leboprojects;
+				TargetAttributes = {
+					6A09C7721F14BABB0096D236 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4URJ54RTED;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6A09C76E1F14BABB0096D236 /* Build configuration list for PBXProject "gcr-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 6A09C76A1F14BABB0096D236;
+			productRefGroup = 6A09C7741F14BABB0096D236 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A09C7721F14BABB0096D236 /* gcr-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A09C7711F14BABB0096D236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A4507A61F28850200279B64 /* gulfcars-logo.png in Resources */,
+				6A09C7811F14BABB0096D236 /* LaunchScreen.storyboard in Resources */,
+				6A09C77E1F14BABB0096D236 /* Assets.xcassets in Resources */,
+				6A09C77C1F14BABB0096D236 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		265F7AD9162DFCF2C24AE91C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-gcr-ios/Pods-gcr-ios-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gcr-ios/Pods-gcr-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D21F497E0D9128BD5EA71CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gcr-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B65D058B9582DAA156649D3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-gcr-ios/Pods-gcr-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TBDropdownMenu/TBDropdownMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilitySwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBDropdownMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gcr-ios/Pods-gcr-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A09C76F1F14BABB0096D236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A09C7791F14BABB0096D236 /* MainViewController.swift in Sources */,
+				35ADD6B71F559C2000860669 /* BasicReviewDetail.swift in Sources */,
+				6A89F7381F222765007D7CDA /* DealerCarListViewController.swift in Sources */,
+				6AB376731F1CD73300C41EC3 /* SearchController.swift in Sources */,
+				6AE579441F18AFA8006384AC /* AppColors.swift in Sources */,
+				6AE579421F18AEA6006384AC /* CarCard.swift in Sources */,
+				6A07D3DC1F1E03EB003B8417 /* CarDetailsViewController.swift in Sources */,
+				3522A2F81F34770E00C61416 /* URL.swift in Sources */,
+				6A89F73C1F22282B007D7CDA /* DealerCarListTableViewCell.swift in Sources */,
+				6AEDCAFA1F20AE1E00671A0C /* DealerViewController.swift in Sources */,
+				357721D71F4ECD10003EB9CB /* CarDetails.swift in Sources */,
+				6A09C7771F14BABB0096D236 /* AppDelegate.swift in Sources */,
+				6AEDCAF81F20AE0400671A0C /* ReviewsViewController.swift in Sources */,
+				6A89F7321F22118A007D7CDA /* ReviewsTableViewCell.swift in Sources */,
+				6AE5794C1F18B43C006384AC /* MainTableViewCell.swift in Sources */,
+				6AB376791F1CFA2400C41EC3 /* SearchTableViewCell.swift in Sources */,
+				6A07D3DE1F1E519D003B8417 /* Constants.swift in Sources */,
+				6A8E93091F20D6E600A2E140 /* ReviewCard.swift in Sources */,
+				357721DA1F4EFA5C003EB9CB /* CarDealer.swift in Sources */,
+				3522A2F61F3476BC00C61416 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6A09C77A1F14BABB0096D236 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A09C77B1F14BABB0096D236 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A09C77F1F14BABB0096D236 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A09C7801F14BABB0096D236 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A09C7831F14BABB0096D236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A09C7841F14BABB0096D236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A09C7861F14BABB0096D236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F6AE86EA8D52DADE3895265 /* Pods-gcr-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4URJ54RTED;
+				INFOPLIST_FILE = "gcr-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lebo.gcr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		6A09C7871F14BABB0096D236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A51E72F7EC044B9C8D1DDE04 /* Pods-gcr-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4URJ54RTED;
+				INFOPLIST_FILE = "gcr-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lebo.gcr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A09C76E1F14BABB0096D236 /* Build configuration list for PBXProject "gcr-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A09C7831F14BABB0096D236 /* Debug */,
+				6A09C7841F14BABB0096D236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A09C7851F14BABB0096D236 /* Build configuration list for PBXNativeTarget "gcr-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A09C7861F14BABB0096D236 /* Debug */,
+				6A09C7871F14BABB0096D236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A09C76B1F14BABB0096D236 /* Project object */;
+}
